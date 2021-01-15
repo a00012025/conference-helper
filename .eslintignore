@@ -1,0 +1,11 @@
+.vscode/
+node_modules/
+
+build/
+dist/
+
+*-compiled.js
+
+log/
+public/
+private/

@@ -1,0 +1,33 @@
+{
+  "name": "Conference Helper",
+  "version": "0.1.4",
+  "description": "Add Conference to Google Calendar!",
+  "permissions": ["identity", "activeTab", "declarativeContent", "storage"],
+  "background": {
+    "scripts": ["app/background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+  },
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  "oauth2": {
+    "client_id": "131931248260-h6ms68eg0k6tnu2en8hvjuo74ksheu0d.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar.events"
+    ]
+  },
+  "content_security_policy": "script-src 'self' 'sha256-xq1ghLxiZLRKNwURdNJJeI/JlKSyo0+5/LgvezlCgrc='; object-src 'self'",
+  "manifest_version": 2
+}
